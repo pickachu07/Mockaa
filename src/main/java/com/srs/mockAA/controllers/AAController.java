@@ -97,4 +97,18 @@ public class AAController {
 			return new ResponseEntity<String>(ex.getLocalizedMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
 		}
     }
+	
+	@PostMapping(value="/loadData", produces = MediaType.APPLICATION_JSON_VALUE)
+	@ResponseBody
+	public ResponseEntity<String> loadData(@RequestBody String body, @RequestHeader("client_api_key") String key) {
+		ObjectMapper objectMapper = new ObjectMapper();
+		try {
+			HashMap<String, Object> bodyMap = objectMapper.readValue(body, HashMap.class);
+			aaService.writeToFile(bodyMap);
+			return new ResponseEntity<String>("", HttpStatus.OK);
+		} catch (Exception ex) {
+			ex.printStackTrace();
+			return new ResponseEntity<String>(ex.getLocalizedMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+    }
 }
