@@ -1,0 +1,26 @@
+{
+  "ver": "1.0",
+  "FI": [
+    {
+      "data": {
+      	"value": 30000
+      },
+      "fipID": "AA-14",
+      "KeyMaterial": {
+        "Nonce": "R4s6vNI7I/JfdeA3/6dMMQ==",
+        "curve": "Curve25519",
+        "DHPublicKey": {
+          "Parameters": "Some Params",
+          "KeyValue": "683938505ec529a700fcceab66273d1aa78d494208a4769930f0818872159265",
+          "expiry": "2020-12-06T11:39:57.153Z"
+        },
+        "Signature": "jFJcYCOTVV6iiLPlM7qY+Zz+3PF8oUPFg1byb1GNr+k=",
+        "cryptoAlg": "ECDHE",
+        "params": "Some Params"
+      }
+    }
+  ],
+  "sessionID": "",
+  "timestamp": "",
+  "txnid": ""
+}

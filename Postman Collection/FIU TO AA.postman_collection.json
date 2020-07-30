@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "fac16650-f327-4602-b004-6cb12be6393d",
+		"name": "FIU TO AA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8030/FI/request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "client_api_key",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZpbnByb2JhbmsiLCJ0eXBlIjoiRklVIiwiaWF0IjoxNTg2ODQ2NzMxLCJleHAiOjE2NDk5MTg3MzF9.A-VX3lgu6T_r2FWIp2bsDAQK9vll6p4uQC_D5LwXmdo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"ver\": \"1.0\",\r\n  \"timestamp\": \"2018-12-06T11:39:57.153Z\",\r\n  \"txnid\": \"e8cc6822-d4bb-4eb1-9e1b-4996fbff8acb\",\r\n  \"FIDataRange\": {\r\n    \"from\": \"2018-12-06T11:39:57.153Z\",\r\n    \"to\": \"2019-12-06T11:39:57.153Z\"\r\n  },\r\n\t\"VDRProvider\": {\r\n\t\t\"vdrpid\": \"VDRP-14\",\r\n\t\t\"fiuid\": \"1\",\r\n\t\t\"actionid\": \"1\"\r\n\t},\r\n  \"Consent\": {\r\n    \"id\": \"654024c8-29c8-11e8-8868-0289437bf331\",\r\n    \"digitalSignature\": \"Digital signature of the consentDetail section in the consent Artefact\"\r\n  },\r\n  \"KeyMaterial\": {\r\n    \"cryptoAlg\": \"ECDHE\",\r\n    \"curve\": \"Curve25519\",\r\n    \"params\": \"string\",\r\n    \"DHPublicKey\": {\r\n      \"expiry\": \"2018-12-06T11:39:57.153Z\",\r\n      \"Parameters\": \"string\",\r\n      \"KeyValue\": \"string\"\r\n    },\r\n    \"Nonce\": 0,\r\n    \"Signature\": \"Signature as defined in W3C standards; Base64 encoded\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8030/FI/request",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8030",
+					"path": [
+						"FI",
+						"request"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
